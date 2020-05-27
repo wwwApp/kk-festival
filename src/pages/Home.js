@@ -56,9 +56,9 @@ class Home extends Component {
           <div className="o-container">
             <div className="ticket-grid">
               <Grid colClass="three-col">
-                <Card />
-                <Card />
-                <Card />
+                <Card btnText="purchase" tag="best value" />
+                <Card btnText="purchase" tag="best value" />
+                <Card btnText="purchase" tag="best value" />
               </Grid>
             </div>
           </div>
