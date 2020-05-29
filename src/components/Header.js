@@ -1,38 +1,26 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Header } from "kk-design-system";
 
-class Header extends Component {
-  state = {};
-  render() {
-    return (
-      <HeaderWrapper>
-        <div className="o-container">
-          <div class="logo">
-            techno<div class="logo__kick">pop</div>
-          </div>
-        </div>
-      </HeaderWrapper>
-    );
-  }
-}
+const TPHeader = (props) => {
+  const logo = (
+    <LogoWrapper className="logo">
+      techno<div className="logo__kick">pop</div>
+    </LogoWrapper>
+  );
 
-const HeaderWrapper = styled.header`
-  /* .logo-icon {
-    width: 3rem;
-    height: 3rem;
-  } */
+  return (
+    <HeaderWrapper>
+      <Header logo={logo} />
+    </HeaderWrapper>
+  );
+};
 
-  position: absolute;
-  top: 0;
-  width: 100%;
-  z-index: 5;
-
-  .logo {
-    font-size: 3rem;
-    line-height: 1.85rem;
-    padding: 2rem 0;
-    color: var(--kk-white);
-  }
+const LogoWrapper = styled.div`
+  font-size: 3rem;
+  line-height: 1.85rem;
+  color: var(--kk-white);
+  cursor: default;
 
   .logo__kick {
     font-weight: 700;
@@ -40,4 +28,11 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-export default Header;
+const HeaderWrapper = styled.div`
+  z-index: 5;
+  position: relative;
+  top: 0;
+  height: 0;
+`;
+
+export default TPHeader;

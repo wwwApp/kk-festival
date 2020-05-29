@@ -1,34 +1,19 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { TextInput, Button } from "kk-design-system";
+import { TextInput, Button, Footer } from "kk-design-system";
 
-class Footer extends Component {
-  state = {};
-
-  render() {
-    return (
-      <FooterWrapper className="footer">
-        <div className="o-container footer__inner">
-          <div className="footer__sub-wrapper">
-            <h2>Subscribe to our newsletter!</h2>
-            <p>
-              Make sure you subscribe and receive latest information on upcoming
-              festivals and perks!
-            </p>
-            <form className="footer__sub-form btn--pink-wrapper">
-              <label>
-                <span className="u-sr-only">Newsletter subscription</span>
-                <TextInput placeholder="enter your email"></TextInput>
-              </label>
-              <Button>subscribe</Button>
-            </form>
-          </div>
-          <div className="footer__copyright">KK © 2020</div>
-        </div>
-      </FooterWrapper>
-    );
-  }
-}
+const TPFooter = (props) => {
+  return (
+    <FooterWrapper className="footer-wrapper">
+      <Footer
+        title="Subscribe to our newsletter!"
+        description="Make sure you subscribe and receive latest information on upcoming
+            festivals and perks!"
+        btnText="subscribe"
+      />
+    </FooterWrapper>
+  );
+};
 
 const FooterWrapper = styled.footer`
   background-color: var(--tp-navy);
@@ -89,4 +74,4 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-export default Footer;
+export default TPFooter;

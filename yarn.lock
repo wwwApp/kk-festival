@@ -6591,10 +6591,10 @@ kind-of@^6.0.0, kind-of@^6.0.2:
   resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
   integrity sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==
 
-kk-design-system@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.yarnpkg.com/kk-design-system/-/kk-design-system-1.7.2.tgz#af7f7687a1f32677b36cadd3a1a4710cdfdae4b1"
-  integrity sha512-d8ux04/PwB2bOM7PjmBoYPLqDyQbrd4hSGtbkQ55eNoklCufaC2Qz58/4t+EqC67cThs6Unhh2qsbGxYaoimmw==
+kk-design-system@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/kk-design-system/-/kk-design-system-1.7.5.tgz#8c6f3806ed0167532ccb0ffd759e499791025abb"
+  integrity sha512-qnfD596G7QNglniHgAnoVQ3rF18Z+EYctVBy1BXH4XmTSMjHgjgqYvKq6b1JiQQj7WEJ/QW+0Nd1ug70uhMVbA==
   dependencies:
     "@babel/runtime" "^7.10.1"
     babel-preset-react-app "^9.1.2"

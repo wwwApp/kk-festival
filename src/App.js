@@ -1,15 +1,15 @@
 import React from "react";
 import Home from "./pages/Home";
 import styled from "styled-components";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import TPHeader from "./components/Header";
+import TPFooter from "./components/Footer";
 
 function App() {
   return (
     <AppContainer className="App">
-      <Header />
+      <TPHeader />
       <Home />
-      <Footer />
+      <TPFooter />
     </AppContainer>
   );
 }

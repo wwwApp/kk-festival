@@ -15,7 +15,7 @@ class TicketModal extends Component {
   modalContent = () => {
     return (
       <ModalWrapper>
-        <div className="modal__title-wrapper btn--pink-wrapper">
+        <div className="modal__title-wrapper">
           <h1 className="modal__title">Checkout</h1>
           <p className="modal__desc">...you selected the ‘double dip’ pkg</p>
           <Button>change pkg</Button>
@@ -40,7 +40,7 @@ class TicketModal extends Component {
               <TextInput placeholder="EXP date" />
             </div>
           </label>
-          <div className="modal__form-submit btn--pink-wrapper">
+          <div className="modal__form-submit">
             <Button
               buttonStyle="btn--primary--outline"
               onClick={this.props.toggleModal}

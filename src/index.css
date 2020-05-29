@@ -21,6 +21,25 @@
 }
 
 /* custom change to design system compo */
+/* btns */
+.btn.btn--primary--solid {
+  background-color: var(--tp-pink) !important;
+}
+
+.btn.btn--primary--solid:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
+}
+
+.btn.btn--primary--outline {
+  border-color: var(--tp-pink) !important;
+  color: var(--tp-pink) !important;
+}
+
+.btn.btn--primary--outline:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
+}
+
+/* cards */
 .c-card {
   border: 1px solid var(--tp-pink);
 }
@@ -41,34 +60,16 @@
   box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
 }
 
-.btn--pink-wrapper .btn[class*="--solid"] {
-  background-color: var(--tp-pink) !important;
-}
-
-.btn--pink-wrapper .btn[class*="--solid"]:hover {
-  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
-}
-
-.btn--pink-wrapper .btn[class*="--outline"] {
-  border-color: var(--tp-pink) !important;
-  color: var(--tp-pink) !important;
-}
-
-.btn--pink-wrapper .btn[class*="--outline"]:hover {
-  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
-}
-
-.btn--dark-blue-wrapper .btn[class*="--solid"] {
+.c-card .btn--primary--solid {
   color: var(--tp-pink) !important;
   background-color: var(--tp-blue--dark) !important;
 }
 
-.btn--dark-blue-wrapper .btn[class*="--solid"]:hover {
+.c-card .btn--primary--solid:hover {
   box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-blue--dark) !important;
 }
 
 /* modal specific */
-
 .ReactModal__Body--open {
   overflow: hidden;
 }

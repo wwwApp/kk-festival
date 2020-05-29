@@ -31,7 +31,7 @@ class Home extends Component {
       <>
         <HomeContainer id="home-page">
           <h1 className="u-sr-only">KK Festival</h1>
-          <section className="page-section hero-slider-section btn--pink-wrapper">
+          <section className="page-section hero-slider-section">
             <h2 className="section-title u-sr-only">Festival info slideshow</h2>
             <Slideshow>
               <div className="hero-slider__slide">
@@ -93,7 +93,7 @@ class Home extends Component {
                 alt=""
               />
               <h2 className="section-title u-sr-only">Featured artists</h2>
-              <div class="featured-artist-section__inner featured-artist-section__inner--headliner">
+              <div className="featured-artist-section__inner featured-artist-section__inner--headliner">
                 <h3 className="section-title">The Headliners</h3>
                 <Grid colClass="three-col">
                   <Card image={headImg1} noText={true} tag="" />
@@ -146,7 +146,7 @@ class Home extends Component {
               <img src={bannerImg} alt="Banner Image" />
             </div>
             <div className="o-container">
-              <div className="ticket-grid btn--dark-blue-wrapper">
+              <div className="ticket-grid">
                 <h2 className="section-title">Select your Getaway Pkg:</h2>
                 <Grid colClass="three-col">
                   <Card
