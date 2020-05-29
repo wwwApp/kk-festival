@@ -1,29 +1,42 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
-import { NavigationBar } from "kk-design-system";
-import logo from "./../assets/logo.svg";
 
 class Header extends Component {
   state = {};
   render() {
     return (
       <HeaderWrapper>
-        <NavigationBar>
-          <NavLink to="/">
-            <img className="logo-icon" src={logo} />
-          </NavLink>
-          <NavLink to="/contact">Contact Us</NavLink>
-        </NavigationBar>
+        <div className="o-container">
+          <div class="logo">
+            techno<div class="logo__kick">pop</div>
+          </div>
+        </div>
       </HeaderWrapper>
     );
   }
 }
 
 const HeaderWrapper = styled.header`
-  .logo-icon {
+  /* .logo-icon {
     width: 3rem;
     height: 3rem;
+  } */
+
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+
+  .logo {
+    font-size: 3rem;
+    line-height: 1.85rem;
+    padding: 2rem 0;
+    color: var(--kk-white);
+  }
+
+  .logo__kick {
+    font-weight: 700;
+    color: var(--tp-pink);
   }
 `;
 

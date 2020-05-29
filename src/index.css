@@ -1,4 +1,10 @@
 /* some global styles */
+:root {
+  --tp-pink: #cc0091;
+  --tp-blue--dark: #13223a;
+  --tp-blue--light: #6fb5c1;
+  --tp-navy: #0b0a1b;
+}
 
 .page-section {
   padding: 3rem 0;
@@ -11,4 +17,58 @@
 .section-title {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--kk-white);
+}
+
+/* custom change to design system compo */
+.c-card {
+  border: 1px solid var(--tp-pink);
+}
+
+.c-card__text-wrapper {
+  text-align: left !important;
+}
+
+.c-card button {
+  width: 100%;
+}
+
+.c-card__tag-wrapper {
+  background-color: var(--tp-pink) !important;
+}
+
+.c-card__link:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
+}
+
+.btn--pink-wrapper .btn[class*="--solid"] {
+  background-color: var(--tp-pink) !important;
+}
+
+.btn--pink-wrapper .btn[class*="--solid"]:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
+}
+
+.btn--pink-wrapper .btn[class*="--outline"] {
+  border-color: var(--tp-pink) !important;
+  color: var(--tp-pink) !important;
+}
+
+.btn--pink-wrapper .btn[class*="--outline"]:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
+}
+
+.btn--dark-blue-wrapper .btn[class*="--solid"] {
+  color: var(--tp-pink) !important;
+  background-color: var(--tp-blue--dark) !important;
+}
+
+.btn--dark-blue-wrapper .btn[class*="--solid"]:hover {
+  box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-blue--dark) !important;
+}
+
+/* modal specific */
+
+.ReactModal__Body--open {
+  overflow: hidden;
 }

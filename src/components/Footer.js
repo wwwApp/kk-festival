@@ -1,27 +1,67 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { TextInput } from "kk-design-system";
 
 class Footer extends Component {
   state = {};
 
   render() {
     return (
-      <FooterWrapper className="footer bg--black">
-        <div className="copyright">KK © 2020</div>
+      <FooterWrapper className="footer">
+        <div className="o-container footer__inner">
+          <div className="footer__sub-wrapper">
+            <h2>Subscribe to our newsletter!</h2>
+            <p>
+              Make sure you subscribe and receive latest information on upcoming
+              festivals and perks!
+            </p>
+            <TextInput placeholder="enter your email"></TextInput>
+          </div>
+          <div className="footer__copyright">KK © 2020</div>
+        </div>
       </FooterWrapper>
     );
   }
 }
 
 const FooterWrapper = styled.footer`
-  width: 100vw;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  background-color: var(--tp-navy);
+  color: var(--kk-white);
 
-  .copyright {
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4rem 1rem 3rem;
+  }
+
+  .footer__copyright {
     text-align: center;
+  }
+
+  .footer__sub-wrapper {
+    margin-bottom: 2rem;
+
+    > * {
+      padding-left: 0;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+
+      @media only screen and (min-width: 768px) {
+        width: 40%;
+      }
+    }
+
+    input {
+      min-width: 20rem;
+    }
   }
 `;
 
