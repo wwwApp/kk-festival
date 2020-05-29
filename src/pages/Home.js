@@ -18,7 +18,7 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      modalVisible: true,
+      modalVisible: false,
     };
   }
 
@@ -40,7 +40,13 @@ class Home extends Component {
                   <div className="feat">feat.</div>forest lyf
                 </h3>
                 <div className="hero-slider__slide__cta">
-                  <Button>purchase a ticket</Button>
+                  <Button
+                    onClick={() => {
+                      this.toggleModal();
+                    }}
+                  >
+                    purchase a ticket
+                  </Button>
                 </div>
               </div>
               <div className="hero-slider__slide">
@@ -49,7 +55,13 @@ class Home extends Component {
                   <div className="feat">feat.</div>forest lyf
                 </h3>
                 <div className="hero-slider__slide__cta">
-                  <Button>purchase a ticket</Button>
+                  <Button
+                    onClick={() => {
+                      this.toggleModal();
+                    }}
+                  >
+                    purchase a ticket
+                  </Button>
                 </div>
               </div>
               <div className="hero-slider__slide">
@@ -58,7 +70,13 @@ class Home extends Component {
                   <div className="feat">feat.</div>forest lyf
                 </h3>
                 <div className="hero-slider__slide__cta">
-                  <Button>purchase a ticket</Button>
+                  <Button
+                    onClick={() => {
+                      this.toggleModal();
+                    }}
+                  >
+                    purchase a ticket
+                  </Button>
                 </div>
               </div>
             </Slideshow>

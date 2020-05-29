@@ -19,6 +19,9 @@ class TicketModal extends Component {
           <h1 className="modal__title">Checkout</h1>
           <p className="modal__desc">...you selected the ‘double dip’ pkg</p>
           <Button>change pkg</Button>
+          <button className="modal__close-btn" onClick={this.props.toggleModal}>
+            &#xd7;
+          </button>
         </div>
         <form className="modal__form-wrapper">
           <label>
@@ -99,6 +102,7 @@ const ModalWrapper = styled.div`
 
   .modal__title-wrapper {
     margin-bottom: 2rem;
+    position: relative;
 
     .modal__title {
       font-size: 2.5rem;
@@ -161,6 +165,14 @@ const ModalWrapper = styled.div`
     @media only screen and (min-width: 768px) {
       position: absolute;
     }
+  }
+
+  .modal__close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: var(--kk-white);
+    font-size: 2rem;
   }
 `;
 
