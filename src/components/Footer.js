@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { TextInput } from "kk-design-system";
+import { TextInput, Button } from "kk-design-system";
 
 class Footer extends Component {
   state = {};
@@ -15,7 +15,13 @@ class Footer extends Component {
               Make sure you subscribe and receive latest information on upcoming
               festivals and perks!
             </p>
-            <TextInput placeholder="enter your email"></TextInput>
+            <form className="footer__sub-form btn--pink-wrapper">
+              <label>
+                <span className="u-sr-only">Newsletter subscription</span>
+                <TextInput placeholder="enter your email"></TextInput>
+              </label>
+              <Button>subscribe</Button>
+            </form>
           </div>
           <div className="footer__copyright">KK © 2020</div>
         </div>
@@ -42,10 +48,6 @@ const FooterWrapper = styled.footer`
   .footer__sub-wrapper {
     margin-bottom: 2rem;
 
-    > * {
-      padding-left: 0;
-    }
-
     h2 {
       margin-bottom: 1rem;
     }
@@ -58,9 +60,31 @@ const FooterWrapper = styled.footer`
         width: 40%;
       }
     }
+  }
+
+  .footer__sub-form {
+    display: flex;
+    flex-direction: row;
+
+    label > * {
+      padding: 0;
+    }
+
+    & > * {
+      padding: 0;
+    }
 
     input {
-      min-width: 20rem;
+      min-width: 0;
+
+      @media only screen and (min-width: 768px) {
+        width: 20rem;
+      }
+    }
+
+    button {
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 `;
