@@ -60,6 +60,10 @@
   box-shadow: 3px 3px var(--kk-white), 5px 5px var(--tp-pink) !important;
 }
 
+.c-card__link:hover .overlay:before {
+  background-color: var(--tp-pink) !important;
+}
+
 .c-card .btn--primary--solid {
   color: var(--tp-pink) !important;
   background-color: var(--tp-blue--dark) !important;

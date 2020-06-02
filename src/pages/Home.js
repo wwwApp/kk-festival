@@ -96,9 +96,27 @@ class Home extends Component {
               <div className="featured-artist-section__inner featured-artist-section__inner--headliner">
                 <h3 className="section-title">The Headliners</h3>
                 <Grid colClass="three-col">
-                  <Card image={headImg1} noText={true} tag="" />
-                  <Card image={headImg2} noText={true} tag="" />
-                  <Card image={headImg3} noText={true} tag="" />
+                  <Card
+                    image={headImg1}
+                    noText={true}
+                    title="Phat Meatballz"
+                    tag=""
+                    description=""
+                  />
+                  <Card
+                    image={headImg2}
+                    noText={true}
+                    title="SOPHIE"
+                    tag=""
+                    description=""
+                  />
+                  <Card
+                    image={headImg3}
+                    noText={true}
+                    title="i_o"
+                    tag=""
+                    description=""
+                  />
                 </Grid>
               </div>
               <div className="featured-artist-section__inner featured-artist-section__inner--lineup">
