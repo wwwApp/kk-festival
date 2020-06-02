@@ -19,11 +19,15 @@ class Home extends Component {
     super(props);
     this.state = {
       modalVisible: false,
+      selectedTicket: "",
     };
   }
 
-  toggleModal() {
-    this.setState({ modalVisible: !this.state.modalVisible });
+  toggleModal(ticket) {
+    this.setState({
+      modalVisible: !this.state.modalVisible,
+      selectedTicket: ticket,
+    });
   }
 
   render() {
@@ -42,7 +46,7 @@ class Home extends Component {
                 <div className="hero-slider__slide__cta">
                   <Button
                     onClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("sampler");
                     }}
                   >
                     purchase a ticket
@@ -57,7 +61,7 @@ class Home extends Component {
                 <div className="hero-slider__slide__cta">
                   <Button
                     onClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("sampler");
                     }}
                   >
                     purchase a ticket
@@ -72,7 +76,7 @@ class Home extends Component {
                 <div className="hero-slider__slide__cta">
                   <Button
                     onClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("sampler");
                     }}
                   >
                     purchase a ticket
@@ -173,7 +177,7 @@ class Home extends Component {
                     description="Pkg includes one day general festival admission. No frills. Just jams. Check it."
                     btnText="purchase a ticket"
                     btnClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("sampler");
                     }}
                     tag=""
                   />
@@ -183,7 +187,7 @@ class Home extends Component {
                     description="Pkg includes wknd pass to the festival, with select front row spots. Groovy."
                     btnText="purchase a ticket"
                     btnClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("double dip");
                     }}
                     tag=""
                   />
@@ -193,7 +197,7 @@ class Home extends Component {
                     description="Pkg includes wknd pass to the festival, with full VIP access and a secret...Far out."
                     btnText="purchase a ticket"
                     btnClick={() => {
-                      this.toggleModal();
+                      this.toggleModal("trifecta");
                     }}
                     tag="best value"
                   />
@@ -204,6 +208,7 @@ class Home extends Component {
         </HomeContainer>
         <TicketModal
           visible={this.state.modalVisible}
+          selectedTicket={this.state.selectedTicket}
           toggleModal={() => {
             this.toggleModal();
           }}

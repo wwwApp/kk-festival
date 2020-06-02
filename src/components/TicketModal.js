@@ -17,8 +17,10 @@ class TicketModal extends Component {
       <ModalWrapper>
         <div className="modal__title-wrapper">
           <h1 className="modal__title">Checkout</h1>
-          <p className="modal__desc">...you selected the ‘double dip’ pkg</p>
-          <Button>change pkg</Button>
+          <p className="modal__desc">
+            ...you selected the ‘{this.props.selectedTicket}’ pkg
+          </p>
+          <Button onClick={this.props.toggleModal}>change pkg</Button>
           <button className="modal__close-btn" onClick={this.props.toggleModal}>
             &#xd7;
           </button>
