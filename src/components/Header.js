@@ -5,7 +5,7 @@ import { Header } from "kk-design-system";
 const TPHeader = (props) => {
   const logo = (
     <LogoWrapper className="logo">
-      techno<div className="logo__kick">pop</div>
+      techno<div className="logo__kick">kk</div>
     </LogoWrapper>
   );
 
@@ -18,7 +18,7 @@ const TPHeader = (props) => {
 
 const LogoWrapper = styled.div`
   font-size: 3rem;
-  line-height: 1.85rem;
+  line-height: 2.85rem;
   color: var(--kk-white);
   cursor: default;
 
